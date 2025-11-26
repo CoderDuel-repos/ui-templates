@@ -1,0 +1,24 @@
+{
+  "id": "social-feed-storytelling-interactive-1764199102685",
+  "category": "social-feed",
+  "theme": "Storytelling Interactive",
+  "variant": "1764199102685",
+  "description": "Narrative-driven with interactive elements",
+  "keywords": [
+    "social",
+    "feed",
+    "coffee",
+    "chat",
+    "website",
+    "where",
+    "people"
+  ],
+  "placeholders": {
+    "HERO_TITLE": "Main headline for hero section (max 60 chars)",
+    "HERO_SUBTITLE": "Supporting text under headline (max 120 chars)"
+  },
+  "code": "const StorytellingApp = () => (\n  <div className=\"min-h-screen bg-indigo-50\">\n    <h1 className=\"text-4xl font-bold text-indigo-900\">Storytelling Interactive</h1>\n    <p className=\"text-indigo-700\">Engaging narrative design</p>\n  </div>\n);",
+  "usageCount": 0,
+  "createdAt": "2025-11-26T23:18:22.745Z",
+  "updatedAt": "2025-11-26T23:18:22.745Z"
+}
