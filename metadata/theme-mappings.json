@@ -1,0 +1,83 @@
+{
+  "themes": [
+    {
+      "id": "retro-nostalgic",
+      "name": "Retro & Nostalgic",
+      "description": "Y2K aesthetics, 90s vibes, vintage computing, neon gradients, pixel art accents",
+      "keywords": ["retro", "vintage", "90s", "y2k", "nostalgic", "neon", "gradient"],
+      "colorScheme": {
+        "primary": "#FF6B9D",
+        "secondary": "#C06C84",
+        "accent": "#F67280",
+        "background": "#355C7D"
+      },
+      "approach": "Y2K-inspired design with bold gradients, playful typography, and nostalgic UI elements reminiscent of early web design"
+    },
+    {
+      "id": "brutalist",
+      "name": "Brutalist",
+      "description": "Raw, bold, unapologetic design with strong typography and minimal decoration",
+      "keywords": ["brutalist", "bold", "raw", "minimal", "stark", "typography"],
+      "colorScheme": {
+        "primary": "#000000",
+        "secondary": "#FF0000",
+        "accent": "#FFFFFF",
+        "background": "#F5F5F5"
+      },
+      "approach": "Brutalist design philosophy with raw HTML aesthetics, bold typography, stark contrasts, and intentionally rough edges"
+    },
+    {
+      "id": "organic-natural",
+      "name": "Organic & Natural",
+      "description": "Earth tones, flowing shapes, nature-inspired elements, soft textures",
+      "keywords": ["organic", "natural", "earthy", "flowing", "soft", "nature"],
+      "colorScheme": {
+        "primary": "#8B7355",
+        "secondary": "#A0937D",
+        "accent": "#C9B8A0",
+        "background": "#F5E6D3"
+      },
+      "approach": "Organic design with flowing shapes, earth tones, natural textures, and gentle curves inspired by nature"
+    },
+    {
+      "id": "maximalist-illustration",
+      "name": "Maximalist Illustration",
+      "description": "Rich illustrations, vibrant colors, detailed graphics, playful and energetic",
+      "keywords": ["maximalist", "illustration", "vibrant", "colorful", "playful", "detailed"],
+      "colorScheme": {
+        "primary": "#FF6B6B",
+        "secondary": "#4ECDC4",
+        "accent": "#FFE66D",
+        "background": "#F7FFF7"
+      },
+      "approach": "Maximalist design with rich illustrations, vibrant color palettes, detailed graphics, and energetic visual elements"
+    },
+    {
+      "id": "futuristic-tech",
+      "name": "Futuristic Tech",
+      "description": "Sleek interfaces, neon accents, dark themes, sci-fi inspired elements",
+      "keywords": ["futuristic", "tech", "neon", "dark", "sleek", "scifi", "modern"],
+      "colorScheme": {
+        "primary": "#00D9FF",
+        "secondary": "#7B2CBF",
+        "accent": "#FF006E",
+        "background": "#0A0E27"
+      },
+      "approach": "Futuristic tech aesthetic with sleek dark interfaces, neon accents, glowing effects, and sci-fi inspired elements"
+    },
+    {
+      "id": "storytelling-interactive",
+      "name": "Storytelling Interactive",
+      "description": "Narrative-driven design, scroll animations, immersive experiences, visual storytelling",
+      "keywords": ["storytelling", "interactive", "narrative", "immersive", "scroll", "animation"],
+      "colorScheme": {
+        "primary": "#2D3561",
+        "secondary": "#C05C7E",
+        "accent": "#F3826F",
+        "background": "#FFB997"
+      },
+      "approach": "Storytelling-focused design with narrative flow, scroll-triggered animations, immersive visual experiences, and interactive elements"
+    }
+  ],
+  "lastUpdated": "2025-11-25T22:00:00Z"
+}

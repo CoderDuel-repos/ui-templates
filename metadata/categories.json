@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "id": "landing-page",
+      "name": "Landing Page",
+      "description": "Marketing sites, hero sections, product pages, call-to-action focused designs",
+      "keywords": ["landing", "hero", "marketing", "product", "cta", "homepage", "conversion"],
+      "sections": ["hero", "features", "testimonials", "pricing", "cta", "footer"],
+      "variantCount": 0
+    },
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "description": "Admin panels, analytics, data visualization, control centers",
+      "keywords": ["dashboard", "admin", "analytics", "data", "charts", "metrics", "stats"],
+      "sections": ["sidebar", "header", "widgets", "charts", "tables", "notifications"],
+      "variantCount": 0
+    },
+    {
+      "id": "e-commerce",
+      "name": "E-Commerce",
+      "description": "Product listings, shopping carts, checkout flows, product detail pages",
+      "keywords": ["ecommerce", "shop", "store", "product", "cart", "checkout", "payment"],
+      "sections": ["product-grid", "filters", "cart", "checkout", "product-detail"],
+      "variantCount": 0
+    },
+    {
+      "id": "saas-product",
+      "name": "SaaS Product",
+      "description": "SaaS applications, tools, productivity software, web apps",
+      "keywords": ["saas", "app", "tool", "software", "productivity", "workspace"],
+      "sections": ["toolbar", "workspace", "sidebar", "modals", "settings"],
+      "variantCount": 0
+    },
+    {
+      "id": "social-feed",
+      "name": "Social Feed",
+      "description": "Social networks, feeds, profiles, messaging, community platforms",
+      "keywords": ["social", "feed", "profile", "posts", "messaging", "community"],
+      "sections": ["feed", "post-card", "profile", "sidebar", "messaging"],
+      "variantCount": 0
+    },
+    {
+      "id": "content-blog",
+      "name": "Content/Blog",
+      "description": "Blogs, articles, media sites, content-focused designs",
+      "keywords": ["blog", "article", "content", "media", "news", "publication"],
+      "sections": ["article", "sidebar", "author-bio", "comments", "related-posts"],
+      "variantCount": 0
+    }
+  ],
+  "lastUpdated": "2025-11-25T22:00:00Z"
+}
