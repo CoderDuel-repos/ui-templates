@@ -1,0 +1,24 @@
+{
+  "id": "social-feed-futuristic-tech-1764199102543",
+  "category": "social-feed",
+  "theme": "Futuristic Tech",
+  "variant": "1764199102543",
+  "description": "Modern tech aesthetic with gradients",
+  "keywords": [
+    "social",
+    "feed",
+    "coffee",
+    "chat",
+    "website",
+    "where",
+    "people"
+  ],
+  "placeholders": {
+    "HERO_TITLE": "Main headline for hero section (max 60 chars)",
+    "HERO_SUBTITLE": "Supporting text under headline (max 120 chars)"
+  },
+  "code": "const FuturisticApp = () => (\n  <div className=\"min-h-screen bg-gradient-to-r from-purple-900 to-blue-900\">\n    <h1 className=\"text-4xl font-bold text-white\">Futuristic Tech</h1>\n    <p className=\"text-gray-300\">Modern and sleek design</p>\n  </div>\n);",
+  "usageCount": 0,
+  "createdAt": "2025-11-26T23:18:22.640Z",
+  "updatedAt": "2025-11-26T23:18:22.640Z"
+}
