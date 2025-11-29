@@ -1,0 +1,43 @@
+{
+  "id": "saas-product-retro--nostalgic-1764396358431",
+  "category": "saas-product",
+  "theme": "Retro & Nostalgic",
+  "variant": "1764396358431",
+  "description": "Retro & Nostalgic themed saas-product",
+  "keywords": [
+    "saas",
+    "product",
+    "want",
+    "note-taking",
+    "allows",
+    "record",
+    "thoughts",
+    "hero",
+    "form",
+    "card-layout"
+  ],
+  "placeholders": {
+    "HERO_TITLE": "Main headline that captures the app's purpose (max 60 chars)",
+    "FEATURE_TITLE": "Feature section heading (max 40 chars)",
+    "LABEL": "Label, brand name, or short text",
+    "LABEL_1": "Label or brand text 1",
+    "LABEL_2": "Label or brand text 2",
+    "LABEL_3": "Label or brand text 3",
+    "LABEL_4": "Label or brand text 4",
+    "LABEL_5": "Label or brand text 5",
+    "CTA_PRIMARY": "Action button text (max 30 chars)",
+    "DESCRIPTION": "Descriptive text that explains features or benefits",
+    "DESCRIPTION_1": "Descriptive text 1 that explains features or benefits",
+    "DESCRIPTION_2": "Descriptive text 2 that explains features or benefits",
+    "DESCRIPTION_3": "Descriptive text 3 that explains features or benefits",
+    "SHORT_TEXT": "Short descriptive text or label",
+    "SHORT_TEXT_1": "Short descriptive text 1",
+    "SHORT_TEXT_2": "Short descriptive text 2",
+    "SHORT_TEXT_3": "Short descriptive text 3",
+    "SHORT_TEXT_4": "Short descriptive text 4"
+  },
+  "code": "const RetroNotesApp = () => {\n  return (\n    <div className=\"min-h-screen bg-amber-50 flex items-center justify-center p-4\">\n      <div className=\"w-full max-w-sm mx-auto bg-orange-100 rounded-3xl shadow-2xl overflow-hidden border-4 border-amber-900\">\n        \n        {/* Status Bar */}\n        <div className=\"bg-amber-900 text-amber-100 px-6 py-3 flex items-center justify-between text-xs font-mono\">\n          <span>{{LABEL}}</span>\n          <span>{{LABEL_1}}</span>\n        </div>\n\n        {/* Header */}\n        <div className=\"bg-gradient-to-r from-orange-400 to-amber-500 px-6 py-8 border-b-4 border-amber-900\">\n          <h1 className=\"text-4xl font-bold text-amber-900 mb-2\" style={{ fontFamily: 'Georgia, serif' }}>{{HERO_TITLE}}</h1>\n          <p className=\"text-amber-900 text-sm font-mono\">{{SHORT_TEXT}}</p>\n        </div>\n\n        {/* Quick Add Note */}\n        <div className=\"p-6 bg-orange-50 border-b-2 border-amber-300\">\n          <div className=\"bg-white border-4 border-amber-900 rounded-lg p-4 shadow-lg\">\n            <textarea \n              className=\"w-full h-24 bg-amber-50 border-2 border-amber-700 rounded p-3 text-amber-900 font-mono text-sm resize-none focus:outline-none focus:border-amber-900\"\n              placeholder=\"What's on your mind today...\"\n            />\n            <button className=\"w-full mt-3 bg-amber-900 text-amber-50 py-3 rounded-lg font-bold text-lg hover:bg-amber-800 shadow-md border-b-4 border-amber-950\">{{CTA_PRIMARY}}</button>\n          </div>\n        </div>\n\n        {/* Recent Notes */}\n        <div className=\"px-6 py-4 space-y-4 max-h-96 overflow-y-auto\">\n          <h2 className=\"text-xl font-bold text-amber-900 mb-4\" style={{ fontFamily: 'Georgia, serif' }}>{{FEATURE_TITLE}}</h2>\n          \n          {/* Note 1 */}\n          <div className=\"bg-yellow-100 border-4 border-amber-800 rounded-lg p-4 shadow-md transform rotate-1\">\n            <div className=\"flex items-start gap-3 mb-2\">\n              <img \n                src=\"https://picsum.photos/id/0/80/80\" \n                alt=\"Memory\" \n                className=\"w-12 h-12 rounded border-2 border-amber-900\"\n              />\n              <div className=\"flex-1\">\n                <p className=\"text-xs text-amber-700 font-mono mb-1\">{{SHORT_TEXT_1}}</p>\n                <p className=\"text-amber-900 font-mono text-sm leading-relaxed\">{{DESCRIPTION}}</p>\n              </div>\n            </div>\n          </div>\n\n          {/* Note 2 */}\n          <div className=\"bg-orange-100 border-4 border-amber-800 rounded-lg p-4 shadow-md transform -rotate-1\">\n            <div className=\"flex items-start gap-3 mb-2\">\n              <img \n                src=\"https://picsum.photos/id/180/80/80\" \n                alt=\"Memory\" \n                className=\"w-12 h-12 rounded border-2 border-amber-900\"\n              />\n              <div className=\"flex-1\">\n                <p className=\"text-xs text-amber-700 font-mono mb-1\">{{SHORT_TEXT_2}}</p>\n                <p className=\"text-amber-900 font-mono text-sm leading-relaxed\">{{DESCRIPTION_1}}</p>\n              </div>\n            </div>\n          </div>\n\n          {/* Note 3 */}\n          <div className=\"bg-yellow-50 border-4 border-amber-800 rounded-lg p-4 shadow-md transform rotate-2\">\n            <div className=\"flex items-start gap-3 mb-2\">\n              <img \n                src=\"https://picsum.photos/id/367/80/80\" \n                alt=\"Memory\" \n                className=\"w-12 h-12 rounded border-2 border-amber-900\"\n              />\n              <div className=\"flex-1\">\n                <p className=\"text-xs text-amber-700 font-mono mb-1\">{{SHORT_TEXT_3}}</p>\n                <p className=\"text-amber-900 font-mono text-sm leading-relaxed\">{{DESCRIPTION_2}}</p>\n              </div>\n            </div>\n          </div>\n\n          {/* Note 4 */}\n          <div className=\"bg-orange-50 border-4 border-amber-800 rounded-lg p-4 shadow-md transform -rotate-2\">\n            <div className=\"flex items-start gap-3 mb-2\">\n              <img \n                src=\"https://picsum.photos/id/244/80/80\" \n                alt=\"Memory\" \n                className=\"w-12 h-12 rounded border-2 border-amber-900\"\n              />\n              <div className=\"flex-1\">\n                <p className=\"text-xs text-amber-700 font-mono mb-1\">{{SHORT_TEXT_4}}</p>\n                <p className=\"text-amber-900 font-mono text-sm leading-relaxed\">{{DESCRIPTION_3}}</p>\n              </div>\n            </div>\n          </div>\n\n        </div>\n\n        {/* Bottom Navigation */}\n        <div className=\"bg-amber-900 border-t-4 border-amber-950 px-6 py-4 flex justify-around items-center\">\n          <button className=\"flex flex-col items-center gap-1 text-amber-100\">\n            <span className=\"text-2xl\">📝</span>\n            <span className=\"text-xs font-mono\">{{LABEL_2}}</span>\n          </button>\n          <button className=\"flex flex-col items-center gap-1 text-amber-400\">\n            <span className=\"text-2xl\">🔍</span>\n            <span className=\"text-xs font-mono\">{{LABEL_3}}</span>\n          </button>\n          <button className=\"flex flex-col items-center gap-1 text-amber-400\">\n            <span className=\"text-2xl\">📚</span>\n            <span className=\"text-xs font-mono\">{{LABEL_4}}</span>\n          </button>\n          <button className=\"flex flex-col items-center gap-1 text-amber-400\">\n            <span className=\"text-2xl\">⚙️</span>\n            <span className=\"text-xs font-mono\">{{LABEL_5}}</span>\n          </button>\n        </div>\n\n      </div>\n    </div>\n  );\n};",
+  "usageCount": 0,
+  "createdAt": "2025-11-29T06:05:58.504Z",
+  "updatedAt": "2025-11-29T06:05:58.504Z"
+}
