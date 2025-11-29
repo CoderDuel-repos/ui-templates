@@ -1,0 +1,36 @@
+{
+  "id": "social-feed-natural--clean-1764395833287",
+  "category": "social-feed",
+  "theme": "Natural & Clean",
+  "variant": "1764395833287",
+  "description": "Natural & Clean themed social-feed",
+  "keywords": [
+    "social",
+    "feed",
+    "want",
+    "make",
+    "like",
+    "facebook",
+    "where"
+  ],
+  "placeholders": {
+    "FEATURE_TITLE": "Feature section heading (max 40 chars)",
+    "LABEL": "Label, brand name, or short text",
+    "LABEL_1": "Label or brand text 1",
+    "LABEL_2": "Label or brand text 2",
+    "LABEL_3": "Label or brand text 3",
+    "LABEL_4": "Label or brand text 4",
+    "LABEL_5": "Label or brand text 5",
+    "LABEL_6": "Label or brand text 6",
+    "CTA_PRIMARY": "Action button text (max 30 chars)",
+    "CTA_1": "Action button 1 text (max 30 chars)",
+    "CTA_2": "Action button 2 text (max 30 chars)",
+    "CTA_3": "Action button 3 text (max 30 chars)",
+    "SHORT_TEXT": "Short descriptive text or label",
+    "SHORT_TEXT_1": "Short descriptive text 1"
+  },
+  "code": "const NatureFeedApp = () => {\n  const posts = [\n    {\n      id: 1,\n      author: \"Sarah Green\",\n      avatar: \"https://picsum.photos/id/180/100/100\",\n      time: \"2 hours ago\",\n      content: \"Just discovered this beautiful hiking trail today! The morning mist through the trees was absolutely magical. Nature never ceases to amaze me. 🌿\",\n      image: \"https://picsum.photos/id/0/800/600\",\n      likes: 24,\n      comments: 5\n    },\n    {\n      id: 2,\n      author: \"Mike Forest\",\n      avatar: \"https://picsum.photos/id/367/100/100\",\n      time: \"5 hours ago\",\n      content: \"Weekend camping trip with the crew. Nothing beats waking up to fresh air and bird songs. Who else loves disconnecting to reconnect? 🏕️\",\n      image: \"https://picsum.photos/id/244/800/600\",\n      likes: 42,\n      comments: 8\n    },\n    {\n      id: 3,\n      author: \"Emma Woods\",\n      avatar: \"https://picsum.photos/id/274/100/100\",\n      time: \"1 day ago\",\n      content: \"My little garden is finally blooming! Started from seeds and now look at this beauty. Patience really does pay off. 🌸\",\n      image: \"https://picsum.photos/id/367/800/600\",\n      likes: 67,\n      comments: 12\n    }\n  ];\n\n  return (\n    <div className=\"min-h-screen bg-gradient-to-b from-amber-50 via-green-50 to-teal-50 py-8 px-4\">\n      <div className=\"max-w-md mx-auto\">\n        \n        <div className=\"bg-white rounded-3xl shadow-lg p-6 mb-6\">\n          <div className=\"flex items-center gap-3 mb-4\">\n            <img \n              src=\"https://picsum.photos/id/180/100/100\" \n              alt=\"Your avatar\" \n              className=\"w-12 h-12 rounded-full object-cover border-2 border-green-200\"\n            />\n            <div className=\"flex-1 bg-stone-100 rounded-full px-4 py-3 text-stone-400\">\n              What's on your mind?\n            </div>\n          </div>\n          <div className=\"flex gap-2\">\n            <button className=\"flex-1 bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-full py-3 font-medium hover:from-green-700 hover:to-teal-700 transition-all\">{{CTA_PRIMARY}}</button>\n            <button className=\"px-6 bg-amber-100 text-amber-700 rounded-full font-medium hover:bg-amber-200 transition-all\">\n              📷\n            </button>\n          </div>\n        </div>\n\n        <div className=\"space-y-6\">\n          {posts.map((post) => (\n            <div key={post.id} className=\"bg-white rounded-3xl shadow-lg overflow-hidden\">\n              <div className=\"p-4 flex items-center gap-3\">\n                <img \n                  src={post.avatar} \n                  alt={post.author} \n                  className=\"w-12 h-12 rounded-full object-cover border-2 border-green-200\"\n                />\n                <div className=\"flex-1\">\n                  <h3 className=\"font-semibold text-stone-800\">{{FEATURE_TITLE}}</h3>\n                  <p className=\"text-sm text-stone-500\">{{SHORT_TEXT}}</p>\n                </div>\n                <button className=\"text-stone-400 text-2xl\">⋯</button>\n              </div>\n\n              <div className=\"px-4 pb-3\">\n                <p className=\"text-stone-700 leading-relaxed\">{{SHORT_TEXT_1}}</p>\n              </div>\n\n              <img \n                src={post.image} \n                alt=\"Post content\" \n                className=\"w-full h-64 object-cover\"\n              />\n\n              <div className=\"p-4\">\n                <div className=\"flex items-center justify-between text-sm text-stone-500 mb-3\">\n                  <span>{{LABEL}}</span>\n                  <span>{{LABEL_1}}</span>\n                </div>\n\n                <div className=\"flex gap-2 pt-3 border-t border-stone-100\">\n                  <button className=\"flex-1 py-2 rounded-full bg-green-50 text-green-700 font-medium hover:bg-green-100 transition-all\">{{CTA_1}}</button>\n                  <button className=\"flex-1 py-2 rounded-full bg-teal-50 text-teal-700 font-medium hover:bg-teal-100 transition-all\">{{CTA_2}}</button>\n                  <button className=\"flex-1 py-2 rounded-full bg-amber-50 text-amber-700 font-medium hover:bg-amber-100 transition-all\">{{CTA_3}}</button>\n                </div>\n              </div>\n            </div>\n          ))}\n        </div>\n\n        <div className=\"fixed bottom-0 left-0 right-0 bg-white border-t border-stone-200 shadow-lg\">\n          <div className=\"max-w-md mx-auto flex justify-around py-3\">\n            <button className=\"flex flex-col items-center gap-1 text-green-600\">\n              <span className=\"text-2xl\">🏡</span>\n              <span className=\"text-xs font-medium\">{{LABEL_2}}</span>\n            </button>\n            <button className=\"flex flex-col items-center gap-1 text-stone-400\">\n              <span className=\"text-2xl\">👥</span>\n              <span className=\"text-xs font-medium\">{{LABEL_3}}</span>\n            </button>\n            <button className=\"flex flex-col items-center gap-1 text-stone-400\">\n              <span className=\"text-2xl\">➕</span>\n              <span className=\"text-xs font-medium\">{{LABEL_4}}</span>\n            </button>\n            <button className=\"flex flex-col items-center gap-1 text-stone-400\">\n              <span className=\"text-2xl\">🔔</span>\n              <span className=\"text-xs font-medium\">{{LABEL_5}}</span>\n            </button>\n            <button className=\"flex flex-col items-center gap-1 text-stone-400\">\n              <span className=\"text-2xl\">⚙️</span>\n              <span className=\"text-xs font-medium\">{{LABEL_6}}</span>\n            </button>\n          </div>\n        </div>\n\n        <div className=\"h-20\"></div>\n      </div>\n    </div>\n  );\n};",
+  "usageCount": 0,
+  "createdAt": "2025-11-29T05:57:13.428Z",
+  "updatedAt": "2025-11-29T05:57:13.428Z"
+}
