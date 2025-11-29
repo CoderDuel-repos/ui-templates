@@ -1,0 +1,43 @@
+{
+  "id": "saas-product-retro--nostalgic-1764393316737",
+  "category": "saas-product",
+  "theme": "Retro & Nostalgic",
+  "variant": "1764393316737",
+  "description": "Retro & Nostalgic themed saas-product",
+  "keywords": [
+    "saas",
+    "product",
+    "want",
+    "make",
+    "where",
+    "people",
+    "play",
+    "hero",
+    "card-layout"
+  ],
+  "placeholders": {
+    "HERO_TITLE": "Main headline that captures the app's purpose (max 60 chars)",
+    "FEATURE_TITLE": "Feature section heading (max 40 chars)",
+    "FEATURE_1_TITLE": "Feature section heading 1 (max 40 chars)",
+    "LABEL": "Label, brand name, or short text",
+    "LABEL_1": "Label or brand text 1",
+    "LABEL_2": "Label or brand text 2",
+    "LABEL_3": "Label or brand text 3",
+    "LABEL_4": "Label or brand text 4",
+    "LABEL_5": "Label or brand text 5",
+    "CTA_PRIMARY": "Action button text (max 30 chars)",
+    "CTA_SECONDARY": "Secondary action button text (max 30 chars)",
+    "DESCRIPTION": "Descriptive text that explains features or benefits",
+    "SHORT_TEXT": "Short descriptive text or label",
+    "SHORT_TEXT_1": "Short descriptive text 1",
+    "SHORT_TEXT_2": "Short descriptive text 2",
+    "SHORT_TEXT_3": "Short descriptive text 3",
+    "SHORT_TEXT_4": "Short descriptive text 4",
+    "SHORT_TEXT_5": "Short descriptive text 5",
+    "SHORT_TEXT_6": "Short descriptive text 6"
+  },
+  "code": "const ScrabbleApp = () => {\n  return (\n    <div className=\"min-h-screen bg-amber-50 flex items-center justify-center p-4\">\n      <div className=\"max-w-sm w-full bg-gradient-to-b from-amber-100 to-orange-50 rounded-[3rem] shadow-2xl overflow-hidden border-8 border-gray-800\">\n        {/* Status Bar */}\n        <div className=\"bg-gray-900 text-white px-6 py-2 flex justify-between items-center text-xs\">\n          <span>{{LABEL}}</span>\n          <div className=\"flex gap-1\">\n            <div className=\"w-4 h-4 bg-white rounded-full\"></div>\n            <div className=\"w-4 h-4 bg-white rounded-full\"></div>\n            <div className=\"w-4 h-4 bg-white rounded-full\"></div>\n          </div>\n        </div>\n\n        {/* Main Content */}\n        <div className=\"h-[700px] overflow-y-auto\">\n          {/* Header */}\n          <div className=\"bg-gradient-to-r from-orange-600 to-red-600 p-6 text-center shadow-lg\">\n            <h1 className=\"text-4xl font-bold text-amber-50 mb-2\" style={{fontFamily: 'Georgia, serif', textShadow: '2px 2px 4px rgba(0,0,0,0.3)'}}>{{HERO_TITLE}}</h1>\n            <p className=\"text-amber-100 text-sm\">{{SHORT_TEXT}}</p>\n          </div>\n\n          {/* Hero Image */}\n          <div className=\"px-6 pt-6\">\n            <img \n              src=\"https://picsum.photos/id/0/800/600\" \n              alt=\"Scrabble board\" \n              className=\"w-full h-48 object-cover rounded-2xl shadow-lg border-4 border-amber-200\"\n            />\n          </div>\n\n          {/* Welcome Section */}\n          <div className=\"px-6 py-6 space-y-4\">\n            <div className=\"bg-white rounded-xl p-6 shadow-md border-2 border-orange-300\">\n              <h2 className=\"text-2xl font-bold text-gray-800 mb-3\" style={{fontFamily: 'Georgia, serif'}}>{{FEATURE_TITLE}}</h2>\n              <p className=\"text-gray-600 text-sm leading-relaxed mb-4\">{{DESCRIPTION}}</p>\n              <button className=\"w-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow text-lg\">{{CTA_PRIMARY}}</button>\n            </div>\n\n            {/* Active Games */}\n            <div className=\"bg-amber-50 rounded-xl p-4 border-2 border-orange-200\">\n              <h3 className=\"text-lg font-bold text-gray-800 mb-3\" style={{fontFamily: 'Georgia, serif'}}>{{FEATURE_1_TITLE}}</h3>\n              \n              <div className=\"space-y-3\">\n                <div className=\"bg-white rounded-lg p-4 shadow border-l-4 border-orange-500\">\n                  <div className=\"flex items-center gap-3 mb-2\">\n                    <img \n                      src=\"https://picsum.photos/id/180/100/100\" \n                      alt=\"Player\" \n                      className=\"w-12 h-12 rounded-full border-2 border-orange-300\"\n                    />\n                    <div className=\"flex-1\">\n                      <p className=\"font-bold text-gray-800\">{{SHORT_TEXT_1}}</p>\n                      <p className=\"text-xs text-gray-500\">{{SHORT_TEXT_2}}</p>\n                    </div>\n                    <span className=\"bg-red-500 text-white text-xs px-2 py-1 rounded-full\">{{LABEL_1}}</span>\n                  </div>\n                </div>\n\n                <div className=\"bg-white rounded-lg p-4 shadow border-l-4 border-blue-400\">\n                  <div className=\"flex items-center gap-3 mb-2\">\n                    <img \n                      src=\"https://picsum.photos/id/367/100/100\" \n                      alt=\"Player\" \n                      className=\"w-12 h-12 rounded-full border-2 border-blue-300\"\n                    />\n                    <div className=\"flex-1\">\n                      <p className=\"font-bold text-gray-800\">{{SHORT_TEXT_3}}</p>\n                      <p className=\"text-xs text-gray-500\">{{SHORT_TEXT_4}}</p>\n                    </div>\n                  </div>\n                </div>\n              </div>\n            </div>\n\n            {/* Features */}\n            <div className=\"grid grid-cols-2 gap-3\">\n              <div className=\"bg-gradient-to-br from-yellow-100 to-orange-100 rounded-xl p-4 text-center border-2 border-orange-200 shadow\">\n                <div className=\"text-3xl mb-2\">🎯</div>\n                <p className=\"font-bold text-gray-800 text-sm\">{{SHORT_TEXT_5}}</p>\n              </div>\n              <div className=\"bg-gradient-to-br from-red-100 to-pink-100 rounded-xl p-4 text-center border-2 border-red-200 shadow\">\n                <div className=\"text-3xl mb-2\">🏆</div>\n                <p className=\"font-bold text-gray-800 text-sm\">{{SHORT_TEXT_6}}</p>\n              </div>\n            </div>\n\n            {/* CTA */}\n            <button className=\"w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white font-bold py-4 rounded-lg shadow-lg border-2 border-amber-700 text-lg\">{{CTA_SECONDARY}}</button>\n          </div>\n        </div>\n\n        {/* Bottom Navigation */}\n        <div className=\"bg-gray-900 px-6 py-4 flex justify-around items-center border-t-4 border-orange-600\">\n          <button className=\"flex flex-col items-center gap-1\">\n            <div className=\"w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold\">H</div>\n            <span className=\"text-xs text-orange-400 font-bold\">{{LABEL_2}}</span>\n          </button>\n          <button className=\"flex flex-col items-center gap-1\">\n            <div className=\"w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold\">G</div>\n            <span className=\"text-xs text-gray-400\">{{LABEL_3}}</span>\n          </button>\n          <button className=\"flex flex-col items-center gap-1\">\n            <div className=\"w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold\">F</div>\n            <span className=\"text-xs text-gray-400\">{{LABEL_4}}</span>\n          </button>\n          <button className=\"flex flex-col items-center gap-1\">\n            <div className=\"w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center text-white font-bold\">P</div>\n            <span className=\"text-xs text-gray-400\">{{LABEL_5}}</span>\n          </button>\n        </div>\n      </div>\n    </div>\n  );\n};",
+  "usageCount": 0,
+  "createdAt": "2025-11-29T05:15:16.813Z",
+  "updatedAt": "2025-11-29T05:15:16.813Z"
+}
